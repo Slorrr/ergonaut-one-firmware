@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         to_game_layer {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <36 37 38>;
         };
     };
