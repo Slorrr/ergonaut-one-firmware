@@ -21,6 +21,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        to_game_layer {
+            bindings = <&to 4>;
+            key-positions = <36 37 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,6 +66,15 @@
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &none         &trans        &none         &trans        &trans
+            >;
+        };
+
+        game_layer {
+            bindings = <
+&kp M  &kp TAB       &kp Q  &kp W   &kp E      &kp R   &trans  &trans  &trans  &trans  &trans  &trans
+&kp H  &kp LEFT_ALT  &kp A  &kp S   &kp D      &kp F   &trans  &trans  &trans  &trans  &trans  &trans
+&kp G  &kp LCTRL     &kp Z  &kp X   &kp C      &kp V   &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &kp SPACE  &trans  &trans  &trans  &trans
             >;
         };
     };
